@@ -108,6 +108,8 @@ return (0);
 
 /**
 * handle_sigint - Handle the SIGINT signal (Ctrl+C)
+* @signal: int
+* return: nothin
 */
 void handle_sigint(int signal)
 {
