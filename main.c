@@ -6,7 +6,7 @@
  * Return: The length of the string
  */
 
-int main()
+int main(void)
 {
 size_t bytes;
 char *env_path, *e_p_d, *execve_env[] = {NULL}, *cmd = NULL, **args, *arg;
@@ -48,4 +48,3 @@ s_e_cmd(cmd, e_p_d, args, execve_env, &last_exit_status);
 free(cmd);
 return (last_exit_status);
 }
-

@@ -128,4 +128,3 @@ if (arg && *arg != '\0')
 }
 (*args)[*arg_len] = NULL;
 }
-

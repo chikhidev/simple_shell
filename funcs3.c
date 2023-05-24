@@ -73,4 +73,3 @@ while (*s && !my_strchr(delim, *s))
 olds = s + 1;
 return (token);
 }
-
