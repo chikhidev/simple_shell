@@ -109,7 +109,10 @@ return (0);
 /**
 * handle_sigint - Handle the SIGINT signal (Ctrl+C)
 */
-void handle_sigint(void)
+void handle_sigint(int signal)
 {
-/*ignore*/
+if (signal == SIGINT)
+{
+printf("Ctrl+C signal received. Handling SIGINT...\n");
+}
 }

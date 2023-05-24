@@ -23,7 +23,7 @@ char *l_strip(char *str);
 int handle_env(char *command);
 int is_exit(char *command);
 int executer(char **args, char *env[]);
-void handle_sigint();
+void handle_sigint(int signal);
 int is_delim(char s, char *delim);
 const char *my_strchr(const char *s, int c);
 char *_strtok(char *s, const char *delim);
