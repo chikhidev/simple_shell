@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * l_strip - Strip leading spaces from a string
- * @str: The string to strip
- *
- * Return: A pointer to the stripped string
- */
+* l_strip - Strip leading spaces from a string
+* @str: The string to strip
+*
+* Return: A pointer to the stripped string
+*/
 char *l_strip(char *str)
 {
 char *striped = malloc(BUFFERSIZE);
@@ -23,9 +23,7 @@ i++;
 while (str[i])
 {
 if (((j + 1) % BUFFERSIZE) == 0)
-{
 striped = realloc(striped, ((j / BUFFERSIZE) + 1) * BUFFERSIZE);
-}
 
 if (is_found_char)
 {
@@ -34,9 +32,7 @@ j++;
 }
 /* we found a character NOT A SPACE */
 if (!is_space(str[i + 1]))
-{
 is_found_char = 1;
-}
 i++;
 }
 striped[j] = '\0';
@@ -51,7 +47,6 @@ return (striped);
 */
 int handle_env(char *command)
 {
-int comp;
 char **env = environ;
 
 if (strcmp(command, "env") == 0)
@@ -113,9 +108,9 @@ return (0);
 
 /**
 * handle_sigint - Handle the SIGINT signal (Ctrl+C)
-* @signo: The signal number
 */
-void handle_sigint(int signo)
+void handle_sigint(void)
 {
-/* Ignore Ctrl+C */
+/*ignore*/
 }
+
