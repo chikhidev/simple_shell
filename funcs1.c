@@ -107,14 +107,14 @@ return (0);
 }
 
 /**
-* handle_sigint - Handle the SIGINT signal (Ctrl+C)
-* @signal: int
-* return: nothin
-*/
-void handle_sigint(int signal)
+ * _putchar - print char
+ * @c: char to print
+ * @fd: buffer
+ * Return: 1 or -1
+ */
+int _putchar(char c, int fd)
 {
-if (signal == SIGINT)
-{
-printf("Ctrl+C signal received. Handling SIGINT...\n");
+	return (write(fd, &c, 1));
 }
-}
+
+
