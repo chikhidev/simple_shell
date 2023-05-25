@@ -61,7 +61,7 @@ int running = 1;
 while (running)
 {
 if (isatty(STDIN_FILENO))
-_print_str("$ ", 1);
+_print_str("#cisfun$ ", 1);
 else
 running = 0;
 
